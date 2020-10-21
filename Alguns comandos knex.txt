@@ -1,0 +1,5 @@
+npx knex migrate:make create_projects_table
+npx knex migrate:latest
+npx knex seed:make 002_projects
+npx knex seed:run --specific 002_projects.js
+
